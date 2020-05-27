@@ -1,22 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans&family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header{
-    padding: 20px;
+    padding: 50px;
     border-bottom: #0066aa solid 5px;
 }
-h2{
-    
-    text-align: center;
-    font-size: 50px;
-}
-h3{
+
+div h3{
     text-align: center;
     font-size: 20px;
     color: #0066aa;
     margin-top: 5px;
+}
+article h5{
+    background-color: #555454;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
 }
 footer{
     background: 
@@ -66,6 +74,7 @@ footer{
     text-align: center;
 }
 .titulo{
+    font-size: 50px;
     position: absolute;
     top: 8em;
     left: 10px;
@@ -79,8 +88,45 @@ footer{
     background-color: #0066aa;
     color: #fff;
 }
-.contenedor{
-    display: inline-block;
-    background-color: #6aa5f8;
+.principal{
+    padding: 20px;
     text-align: center;
+    color: black;
+    font-family: 'Just', sans-serif;
+}
+.contenedor{
+   text-align: center;
+   display: flex;
+   margin-right: 20px;
+   justify-content: space-around;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+.contenedor section{
+    width: calc(60% - 10px);
+}
+.formulario{
+    text-align: center;
+    margin: 20px;
+    background-color: #a7a7a7;
+}
+.buscador{
+    float: right;
+    background-color: #a7a7a7;
+    padding: 0 10px 10px 10px;
+    
+}
+.cont-cont{
+    display: flex;
+}
+.tit-cont{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Just', sans-serif;
+}
+.imagen{
+    width: 70%;
+    height: 500px;
 }
