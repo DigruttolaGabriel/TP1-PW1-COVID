@@ -20,14 +20,30 @@ div h3{
     margin-top: 5px;
 }
 article h5{
-    background-color: #555454;
-    color: #fff;
+    background-color: #3989f7;
+    color: #000;
     padding: 10px;
     margin: 10px;
     border-radius: 5%;
 }
+article h6{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+article a{
+    color: #000;
+}
+article a:hover{
+    color: #fff;
+}
+aside{
+    background-color: #555454;
+    padding: 30px;
+}
 footer{
-    background: 
+    background-color: #05975a;
+    border-top: #004b2c solid 5px;
+    margin-top: 15px;
 }
 .menu{
     background-color: #3989f7;
@@ -89,9 +105,10 @@ footer{
     color: #fff;
 }
 .principal{
+    background-color: #3989f7;
     padding: 20px;
     text-align: center;
-    color: black;
+    color: #000;
     font-family: 'Just', sans-serif;
 }
 .contenedor{
@@ -129,4 +146,27 @@ footer{
 .imagen{
     width: 70%;
     height: 500px;
+}
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+.urgencia{
+
+}
+.bot-env{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color:#555454;
+    color: #000;
+    margin-top: 10px;
+}
+.bot-env:hover{
+    background-color: #0066aa;
+    color: #fff;
+    transition: 1s;
 }
