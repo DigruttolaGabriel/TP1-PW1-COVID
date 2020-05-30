@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/diseases-list.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Enfermedades</title>
 </head>
+
 <body>
     <header>
-
+        <nav id="nav-bar">
+            <a href="index.html" id="logo">
+                <img src="img/estetoscopio.svg" alt="logo">
+            </a>
+            <div class="search-container">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador-enfermedades">
+            </div>
+            <ul>
+                <li>
+                    <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+                </li>
+                <li>
+                    <a href="covid-details.html"><i class="fa fa-medkit"></i> Vacunación</a>
+                </li>
+                <li>
+                    <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+                </li>
+                <li>
+                    <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-
+        <section class="sub-menu">
+            <article>
+                <h2>ENFERMEDADES</h2>
+            </article>
+        </section>
+        <section class="main-content">
+            <label for="buscador"></label>
+            <input type="text" id="buscador" placeholder="Buscar por enfermedad">
+            <article>
+                <ul id="listado-enfermedades">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+        </section>
     </main>
     <footer>
-
+        <section class="container-grid">
+            <article>
+                <h3>Datos del grupo</h3>
+                <p>López, Julián - 41.106.914</p>
+                <p>Digruttola, Gabriel - 38.621.232</p>
+            </article>
+            <article>
+                <h3>Menú inferior</h3>
+                <p><a href="">Enfermedades</a></p>
+                <p><a href="">Hospitales</a></p>
+                <p><a href="">Vacunas</a></p>
+            </article>
+            <article>
+                <h3>Redes sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" id="facebook-icon"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x" id="twitter-icon"></i></a>
+                </p>
+            </article>
+        </section>
     </footer>
 </body>
+
 </html>

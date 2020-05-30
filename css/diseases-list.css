@@ -1,0 +1,43 @@
+main {
+    width: 100%;
+}
+
+#listado-enfermedades li {
+    list-style: none;
+}
+
+.sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(152, 152, 152);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#buscador-enfermedades {
+    margin-top: 5px;
+}
+
+#buscador-enfermedades {
+    width: 450px;
+    height: 25px;
+    background: #fcfcfc;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-indent: 5px;
+    padding: 2px;
+}

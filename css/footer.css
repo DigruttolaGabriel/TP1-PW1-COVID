@@ -1,0 +1,32 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #5a5a5a;
+    color: white;
+    text-align: center;
+    border-top: black solid 1px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+a {
+    color: white;
+}
+
+i {
+    padding-top: 8px;
+}
+
+#facebook-icon {
+    color: rgb(56, 88, 152);
+}
+
+#twitter-icon {
+    color: rgb(29, 161, 242);
+}
