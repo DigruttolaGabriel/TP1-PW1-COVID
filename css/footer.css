@@ -1,9 +1,9 @@
 footer {
     position: fixed;
-    left: 0;
     bottom: 0;
-    padding: 10px;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #5a5a5a;
     color: white;
     text-align: center;
@@ -15,18 +15,29 @@ footer {
     grid-template-columns: 33% 33% 33%;
 }
 
+.container-grid h3 {
+    padding-bottom: 5px;
+}
+
 a {
     color: white;
 }
 
-i {
-    padding-top: 8px;
+.social {
+    padding: 8px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 #facebook-icon {
-    color: rgb(56, 88, 152);
+    background: #3B5998;
+    color: white;
 }
 
 #twitter-icon {
-    color: rgb(29, 161, 242);
+    background: #55ACEE;
+    color: white;
 }

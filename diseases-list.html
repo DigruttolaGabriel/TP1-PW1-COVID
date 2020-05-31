@@ -16,25 +16,15 @@
     <header>
         <nav id="nav-bar">
             <a href="index.html" id="logo">
-                <img src="img/estetoscopio.svg" alt="logo">
+                <img src="img/coronavirus.svg" alt="logo">
             </a>
             <div class="search-container">
-                <input type="list" placeholder="Buscar.." name="buscador" id="buscador-enfermedades">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador">
             </div>
-            <ul>
-                <li>
-                    <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
-                </li>
-                <li>
-                    <a href="covid-details.html"><i class="fa fa-medkit"></i> Vacunación</a>
-                </li>
-                <li>
-                    <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
-                </li>
-                <li>
-                    <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
-                </li>
-            </ul>
+            <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+            <a href=""><i class="fa fa-medkit"></i> Vacunación</a>
+            <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+            <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
         </nav>
     </header>
     <main>
@@ -44,22 +34,114 @@
             </article>
         </section>
         <section class="main-content">
-            <label for="buscador"></label>
-            <input type="text" id="buscador" placeholder="Buscar por enfermedad">
-            <article>
-                <ul id="listado-enfermedades">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
+            <input type="text" id="buscador-enfermedades" placeholder="Filtrar por enfermedad" list="datalist-enfermedades">
+            <datalist id="datalist-enfermedades">
+                <option value="COVID">
+                <option value="VIH">
+                <option value="Resfriado Común">
+                <option value="Ébola">
+                <option value="Gripe">
+                <option value="Sarampión">
+                <option value="Varicela">
+                <option value="Dengue">
+                <option value="Gripe Aviaria">
+                <option value="Gripe Porcina">
+            </datalist>
+            <ul id="listado-enfermedades">
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">COVID</h4>
+                        <p class="parrafo-enfermedad">La COVID-19 (acrónimo del inglés coronavirus disease 2019),​ también conocida como enfermedad por coronavirus3​ e incorrectamente como neumonía por coronavirus,​ es una enfermedad infecciosa causada por el virus SARS-CoV-2.</p>
+                        <div class="button-enfermedad"><a href="covid-details.html" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">VIH</h4>
+                        <p class="parrafo-enfermedad">La infección por el virus de la inmunodeficiencia humana y el síndrome de inmunodeficiencia adquirida (VIH/sida) son un espectro de enfermedades causadas por la infección causada por el virus de la inmunodeficiencia humana (VIH).</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/VIH/sida" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Resfriado Común</h4>
+                        <p class="parrafo-enfermedad">El resfriado común, también conocido como resfrío común, catarro o constipado, es una enfermedad infecciosa viral frecuente del aparato respiratorio superior que afecta la nariz, los senos paranasales, la faringe y la laringe.
+                            Es causado principalmente por los rinovirus, es autolimitada y puede afectar a personas de todas las edades. El virus se contagia a través del contacto con las secreciones nasales de la persona infectada o la inhalación de
+                            sus gotas de saliva. Los síntomas aparecen entre uno y dos días posterior al contacto.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Resfriado_com%C3%BAn" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Ébola</h4>
+                        <p class="parrafo-enfermedad">La enfermedad por el virus del Ébola (EVE), enfermedad del ébolavirus, fiebre hemorrágica del Ébola (FHE), enfermedad del Ébola1​ o, simplemente, como ébola,1​ es una enfermedad causada en el ser humano por el virus del Ébola.
+                            Normalmente los síntomas comienzan entre los dos días y las tres semanas después de haber contraído el virus, con fiebre, dolor de garganta, dolores musculares, y dolor de cabeza. Por lo general, siguen náuseas, vómitos y diarrea,
+                            junto con fallo hepático y renal. En ese momento, algunos pacientes empiezan a sufrir complicaciones hemorrágicas.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Enfermedad_por_el_virus_del_%C3%89bola" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Gripe</h4>
+                        <p class="parrafo-enfermedad">La gripe (también, gripa o influenza)​ es una enfermedad infecciosa causada por el influenzavirus A o el influenzavirus B, géneros ambos de virus de ARN de la familia Orthomyxoviridae.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Gripe" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Sarampión</h4>
+                        <p class="parrafo-enfermedad">El sarampión es una enfermedad infecciosa exantemática como la rubeola o la varicela, bastante frecuente, especialmente en niños, causada por un virus, específicamente de la familia paramyxoviridae del género Morbillivirus. Se
+                            caracteriza por las típicas manchas en la piel de color rojo (exantema), así como la fiebre y un estado general debilitado. Si se presentan complicaciones, el sarampión puede causar inflamación en los pulmones y en el cerebro
+                            que amenazan la vida del paciente.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Sarampi%C3%B3n" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Varicela</h4>
+                        <p class="parrafo-enfermedad">La varicela (a partir del latín medieval variola, «pústula»; conocida también como lechina en Venezuela2​ y peste cristal en Chile)3​4​ es una enfermedad infecciosa causada por el virus varicela-zóster, perteneciente a la familia
+                            de los herpesvirus, que también causa el herpes zóster. Se presenta principalmente en niños de entre uno y nueve años de edad. La infección en adolescentes y adultos suele ser más severa y tiene mayor riesgo de complicaciones
+                            como la enfermedad pulmonar intersticial.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Varicela" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Dengue</h4>
+                        <p class="parrafo-enfermedad">El dengue es una enfermedad infecciosa causada por el virus del dengue, perteneciente al género flavivirus, que es transmitida por mosquitos, principalmente por el Aedes aegypti. Existen 4 tipos del virus de dengue. La infección
+                            causa síntomas gripales, y en ocasiones evoluciona hasta convertirse en un cuadro potencialmente mortal, llamado dengue grave o dengue hemorrágico.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Dengue" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Gripe Aviaria</h4>
+                        <p class="parrafo-enfermedad">La gripe aviaria o gripe aviar, también denominada como influenza aviar (del inglés), gripe del pollo o gripe de los pájaros, designa a una enfermedad infecciosa vírica y que afecta a las aves, aunque tiene suficiente potencial
+                            como para infectar a distintas especies de mamíferos, incluidos el ser humano, el cerdo y el gato doméstico. Fue identificada por primera vez en Italia a finales del siglo XIX y hasta la fecha se ha manifestado en diversas
+                            partes del mundo.</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Gripe_aviaria" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+                <li class="item-enfermedad">
+                    <div class="img-enfermedad"><img src="img/virus.jpg" alt=""></div>
+                    <div class="text-enfermedad">
+                        <h4 class="titulo-enfermedad">Gripe Porcina</h4>
+                        <p class="parrafo-enfermedad">La gripe porcina (también conocida como influenza porcina o gripe del cerdo)1​ es una enfermedad infecciosa causada por cualquier virus perteneciente a la familia Orthomyxoviridae y que es endémica en poblaciones porcinas. Estas
+                            cepas virales, conocidas como virus de la influenza porcina o SIV (por las siglas en inglés de «swine influenza viruses») han sido clasificadas en Influenzavirus C o en alguno de los subtipos del género Influenzavirus A (siendo
+                            las cepas más conocidas H1N1, H3N2, H3N3 —aislada en Quebec— y H1N2 —aislada en Japón y Europa).</p>
+                        <div class="button-enfermedad"><a href="https://es.wikipedia.org/wiki/Gripe_porcina" class="button-ver-mas">Ver más</a></div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -78,8 +160,8 @@
             <article>
                 <h3>Redes sociales</h3>
                 <p>
-                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" id="facebook-icon"></i></a>
-                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x" id="twitter-icon"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x social" id="facebook-icon"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x social" id="twitter-icon"></i></a>
                 </p>
             </article>
         </section>
