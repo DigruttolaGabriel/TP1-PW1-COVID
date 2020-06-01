@@ -9,11 +9,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-header{
-    padding: 50px;
-    border-bottom: #0066aa solid 5px;
-}
-
 div h3{
     text-align: center;
     font-size: 20px;
@@ -41,11 +36,6 @@ article a{
 }
 article a:hover{
     color: #fff;
-}
-footer{
-    background-color: #05975a;
-    border-top: #004b2c solid 5px;
-    margin-top: 15px;
 }
 .menu{
     background-color: #3989f7;
@@ -87,23 +77,25 @@ footer{
     opacity: 0.8;
 }
 .slider{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 5px;
+   text-align: center;
+   margin: 5px;
+}
+.img-slr{
+    width: 1200px;
+    height: 750px;
 }
 .titulo{
     font-size: 50px;
     position: absolute;
-    top: 8em;
-    left: 10px;
+    top: 13em;
+    left: 80px;
     background-color: #0066aa;
     color: #fff;
 }
 .subtitulo{
     position: absolute;
-    left: 10px;
-    top: 23em;
+    left: 80px;
+    top: 36em;
     background-color: #0066aa;
     color: #fff;
 }
@@ -117,14 +109,14 @@ footer{
     border-radius: 50px;
     margin-right: 520px;
     margin-left: 520px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .contenedor{
    text-align: center;
    display: flex;
    margin-right: 20px;
    justify-content: space-around;
-   padding: 20px;
+   padding: 40px;
    flex-wrap: wrap;
 }
 .contenedor section{
@@ -234,4 +226,18 @@ footer{
 .text-col2{
     margin-left: 40px;
     font-size: 70px;
+}
+.tit-map{
+    text-align: center;
+    font-family: 'Just', sans-serif;
+    margin-top: 10px;
+    color: rgb(78, 78, 78);
+}
+.img-map{
+    text-align: center;
+}
+.map-hos{
+    width: 1200px;
+    height: 600px;
+    margin: 20px;
 }
