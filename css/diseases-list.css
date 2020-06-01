@@ -4,21 +4,6 @@ main {
     padding-bottom: 90px;
 }
 
-#listado-enfermedades li {
-    list-style: none;
-}
-
-.sub-menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +11,16 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.titulo-contenido {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#listado-enfermedades li {
+    list-style: none;
 }
 
 #buscador-enfermedades {
