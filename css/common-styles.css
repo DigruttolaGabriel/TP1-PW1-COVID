@@ -40,7 +40,7 @@ article h6 {
     margin-bottom: 5px;
 }
 
-article a {
+.link-pagina-principal {
     font-size: 15px;
     color: #000;
     background-color: #3989f7;
@@ -110,43 +110,56 @@ footer {
 }
 
 .slider {
+    position: relative;
     text-align: center;
     margin: 5px;
 }
 
+.slider p {
+    text-align: left;
+}
+
 .img-slr {
-    width: 1200px;
-    height: 750px;
+    width: 100%;
+    height: 100%;
 }
 
 .titulo {
-    font-size: 50px;
-    position: absolute;
-    top: 13em;
-    left: 80px;
+    font-size: 6vw;
     background-color: #0066aa;
     color: #fff;
+    position: absolute;
+    top: calc(80% - 60px);
+    left: 10px;
+    padding: 0 5px;
 }
 
 .subtitulo {
+    font-size: 2vw;
     position: absolute;
-    left: 80px;
-    top: 36em;
+    top: calc(90% - 25px);
+    left: 10px;
     background-color: #0066aa;
     color: #fff;
+    vertical-align: text-bottom;
+    padding: 0 5px;
 }
 
-.principal {
-    background-color: #3989f7;
-    padding: 20px;
+.titulo-principal {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-principal h5 {
+    background-color: #3989f7;
+    width: calc(40% - 10px);
+    padding: 20px;
+    border-radius: 50px;
     color: #000;
     font-family: 'Just', sans-serif;
     font-size: 25px;
-    border-radius: 50px;
-    margin-right: 520px;
-    margin-left: 520px;
-    margin-top: 20px;
 }
 
 .contenedor {
@@ -158,8 +171,10 @@ footer {
     flex-wrap: wrap;
 }
 
-.contenedor section {
-    width: calc(60% - 10px);
+.contenedor article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario {
@@ -215,19 +230,8 @@ footer {
     transition: 1s;
 }
 
-.borde1 {
-    padding: 25px;
-    border-radius: 50%;
-    background-color: #a7a7a7;
-}
-
-.borde2 {
-    padding: 25px;
-    border-radius: 50%;
-    background-color: #a7a7a7;
-}
-
-.borde3 {
+.borde {
+    width: 70px;
     padding: 25px;
     border-radius: 50%;
     background-color: #a7a7a7;
@@ -236,6 +240,13 @@ footer {
 .columna {
     float: left;
     width: 50%;
+    vertical-align: middle;
+}
+
+.columna-derecha {
+    float: right;
+    width: 50%;
+    vertical-align: middle;
 }
 
 .columnas:after {
@@ -249,12 +260,6 @@ footer {
     margin-top: 10px;
     padding: 40px;
     margin-bottom: 10px;
-}
-
-.telefono {
-    text-align: center;
-    font-size: 130px;
-    margin-bottom: 5px;
 }
 
 .tex-gra {
@@ -277,29 +282,40 @@ footer {
 
 .text-col1 {
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 2vw;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .text-col2 {
     margin-left: 40px;
-    font-size: 70px;
+    font-size: 7vw;
 }
 
-.tit-map {
+.telefono {
     text-align: center;
-    font-family: 'Just', sans-serif;
-    margin-top: 10px;
+    font-size: 11vw;
+    margin-bottom: 5px;
+}
+
+.titulo-contenido {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
     color: rgb(78, 78, 78);
-}
-
-.img-map {
-    text-align: center;
 }
 
 .map-hos {
     width: 1200px;
     height: 600px;
     margin: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }

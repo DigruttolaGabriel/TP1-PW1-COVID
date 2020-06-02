@@ -5,31 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
+        <nav id="nav-bar">
+            <a href="index.html" id="logo">
+                <img src="img/coronavirus.svg" alt="logo">
+            </a>
+            <div class="search-container">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador">
+            </div>
+            <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+            <a href=""><i class="fa fa-medkit"></i> Vacunación</a>
+            <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+            <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
+        </nav>
     </header>
     <main>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                <li>
-                    <a href="diseases-list.html">ENFERMEDADES</a>
-                </li>
-                <li>
-                    <a href="covid-details.html">VACUNACIÓN</a>
-                </li>
-                <li>
-                    <a href="hospitals-map.html">HOSPITALES</a>
-                </li>
-                <li>
-                    <a href="contact-us.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
         <section class="cont-cont">
             <article class="formulario">
                 <h2 class="tit-cont">CONTACTO</h2>
@@ -79,12 +75,10 @@
                     <option value="tu">Tucumán</option>
                 </select>
                 <br><br>
-                <label for="">Indique su sexo: </label>
-                M<input type="radio" name="sexo" id="masculino">
-                <label for="femenino"></label>
-                F <input type="radio" name="sexo" id="femenino">
-                <label for="otro"></label>
-                Otro <input type="radio" name="sexo" id="otro">
+                <label for="">Indique su sexo: </label> M
+                <input type="radio" name="sexo" id="masculino">
+                <label for="femenino"></label> F <input type="radio" name="sexo" id="femenino">
+                <label for="otro"></label> Otro <input type="radio" name="sexo" id="otro">
                 <br><br>
                 <label for="fecha">Fecha de nacimiento</label>
                 <input type="date" id="fecha" name="fecha" required>
@@ -99,20 +93,38 @@
                 <input type="submit" value="Enviar" id="submit" class="bot-env">
             </article>
             <article>
-                <img class="imagen"
-                    src=https://www.who.int/images/default-source/imported/contact-us.tmb-1024v.jpg?sfvrsn=fa0e6c6e_6"
-                    alt="">
+                <img class="imagen" src=https://www.who.int/images/default-source/imported/contact-us.tmb-1024v.jpg?sfvrsn=fa0e6c6e_6 "
+                    alt=" ">
             </article>
         </section>
-        <aside class="asi-cont">
-            <h3 class="ubicacion">UBICACIÓN</h3>
-            <div class="centrado">
-            <img src="img/ubicacion.png" alt="mapa-hospital" width="630">
+        <aside class="asi-cont ">
+            <h3 class="ubicacion ">UBICACIÓN</h3>
+            <div class="centrado ">
+            <img src="img/ubicacion.png " alt="mapa-hospital " width="630 ">
             </div>
         </aside>
     </main>
     <footer>
-
+        <section class="container-grid ">
+            <article>
+                <h3>Datos del grupo</h3>
+                <p>López, Julián - 41.106.914</p>
+                <p>Digruttola, Gabriel - 38.621.232</p>
+            </article>
+            <article>
+                <h3>Menú inferior</h3>
+                <p><a href="diseases-list.html ">Enfermedades</a></p>
+                <p><a href="hospitals-map.html ">Hospitales</a></p>
+                <p><a href="contact-us.html ">Vacunas</a></p>
+            </article>
+            <article>
+                <h3>Redes sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/ "><i class="fa fa-facebook fa-2x social " id="facebook-icon "></i></a>
+                    <a href="https://twitter.com/ "><i class="fa fa-twitter fa-2x social " id="twitter-icon "></i></a>
+                </p>
+            </article>
+        </section>
     </footer>
 </body>
 

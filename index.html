@@ -5,59 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Inicio</title>
 </head>
 
 <body class="contacto">
     <header>
-        <div class="buscador">
-            <form action=""></form>
-            <label for="buscador" class=""></label>
-            <input type="buscador" name="buscador" id="buscador" maxlength="200" size="18" placeholder="Buscar...">
-        </div>
+        <nav id="nav-bar">
+            <a href="index.html" id="logo">
+                <img src="img/coronavirus.svg" alt="logo">
+            </a>
+            <div class="search-container">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador">
+            </div>
+            <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+            <a href=""><i class="fa fa-medkit"></i> Vacunación</a>
+            <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+            <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
+        </nav>
     </header>
     <main>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                <li>
-                    <a href="diseases-list.html">ENFERMEDADES</a>
-                </li>
-                <li>
-                    <a href="covid-details.html">VACUNACIÓN</a>
-                </li>
-                <li>
-                    <a href="hospitals-map.html">HOSPITALES</a>
-                </li>
-                <li>
-                    <a href="contact-us.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
         <div class="slider">
             <img src="img/cuarentena-avila.jpg" alt="cuarentena" class="img-slr">
             <h2 class="titulo">CORONAVIRUS (COVID-19)</h2>
             <h3 class="subtitulo">PANDEMIA MUNDIAL</h3>
         </div>
-        <div>
-        <h5 class="principal">PANDEMIA MUNDIAL</h5>
-        </div>
+        <section class="titulo-principal">
+            <h5>PANDEMIA MUNDIAL</h5>
+        </section>
         <section class="contenedor">
             <article>
-                <p class="borde1"><i class="fas fa-heartbeat"></i></p>
+                <p class="borde"><i class="fas fa-heartbeat"></i></p>
                 <br>
-                 <a href="diseases-list.html">ENFERMEDADES</a>
+                <a href="diseases-list.html" class="link-pagina-principal">ENFERMEDADES</a>
             </article>
             <article>
-                <p class="borde2"><i class="fas fa-syringe"></i></p>
+                <p class="borde"><i class="fas fa-syringe"></i></p>
                 <br>
-                <a href="">VACUNAS</a>
+                <a href="" class="link-pagina-principal">VACUNAS</a>
             </article>
             <article>
-                <p class="borde3"><i class="fas fa-hospital"></i></p>
+                <p class="borde"><i class="fas fa-hospital"></i></p>
                 <br>
-                <a href="hospitals-map.html">HOSPITALES</a>
+                <a href="hospitals-map.html" class="link-pagina-principal">HOSPITALES</a>
             </article>
         </section>
         <div class="columnas">
@@ -65,33 +56,33 @@
                 <p class="text-col1">Si tenes síntomas de COVID-19</p>
                 <h2 class="text-col2">LLAMA AL</h2>
             </div>
-            <div class="columna">
-                <p class="telefono"><i class="fas fa-phone-square-alt"></i>148</p>    
-            </div>           
+            <div class="columna-derecha">
+                <p class="telefono"><i class="fas fa-phone-square-alt telefono"></i>148</p>
+            </div>
         </div>
-        <a href="inicio" class="arriba"></a>
+        <a href="index.html" class="arriba"></a>
     </main>
     <footer>
-       <!-- <div class="datos">
-           <article>
-            <h6>Datos del grupo:</h6>
-            <p>López, Julián - 41106914</p>
-            <p>Digruttola, Gabriel - </p>
+        <section class="container-grid">
+            <article>
+                <h3>Datos del grupo</h3>
+                <p>López, Julián - 41.106.914</p>
+                <p>Digruttola, Gabriel - 38.621.232</p>
             </article>
             <article>
-            <h6>Menú inferior</h6>
-            <a href="">Enfermedades</a>
-            <br>
-            <a href="">Vacunas</a>
-            <br>
-            <a href="">Hospitales</a>
-            <br>
-            <a href="">Contacto</a>
+                <h3>Menú inferior</h3>
+                <p><a href="diseases-list.html">Enfermedades</a></p>
+                <p><a href="hospitals-map.html">Hospitales</a></p>
+                <p><a href="contact-us.html">Vacunas</a></p>
             </article>
             <article>
-            <h6>Redes sociales</h6>
+                <h3>Redes sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x social" id="facebook-icon"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x social" id="twitter-icon"></i></a>
+                </p>
             </article>
-        </div>-->
+        </section>
     </footer>
 </body>
 
