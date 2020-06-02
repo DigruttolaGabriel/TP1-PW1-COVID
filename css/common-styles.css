@@ -2,31 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans&family=Roboto&display=swap');
 @import 'all.min.css';
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
-div h3{
+
+div h3 {
     text-align: center;
     font-size: 20px;
     color: #0066aa;
     margin-top: 5px;
 }
-i{
+
+article h5 {
+    background-color: #3989f7;
+    color: #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+i {
     font-size: 70px;
 }
-div i{
+
+div i {
     font-size: 120px;
     margin-right: 25px;
 }
-article h6{
+
+article h6 {
     font-size: 15px;
     margin-bottom: 5px;
 }
-article a{
+
+.link-pagina-principal {
     font-size: 15px;
     color: #000;
     background-color: #3989f7;
@@ -34,32 +48,49 @@ article a{
     padding: 10px;
     border-radius: 5%;
 }
-article a:hover{
+
+article a:hover {
     color: #fff;
 }
-.menu{
-    background-color: #3989f7;
-    border-bottom: #0066aa solid 5px;     
+
+aside {
+    background-color: #555454;
+    padding: 30px;
 }
-.menu ul{
+
+footer {
+    background-color: #05975a;
+    border-top: #004b2c solid 5px;
+    margin-top: 15px;
+}
+
+.menu {
+    background-color: #3989f7;
+    border-bottom: #0066aa solid 5px;
+}
+
+.menu ul {
     display: flex;
     justify-content: center;
 }
-.menu li{
+
+.menu li {
     list-style: none;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: #fff;
     padding: 10px;
     display: block;
 }
-.menu a:hover{
+
+.menu a:hover {
     background-color: #a7a7a7;
     color: #000;
-    
 }
-.arriba{
+
+.arriba {
     display: block;
     width: 40px;
     height: 40px;
@@ -73,81 +104,94 @@ article a:hover{
     z-index: 100;
     transition: 1s;
 }
-.arriba:hover{
+
+.arriba:hover {
     opacity: 0.8;
 }
-.slider{
-   text-align: center;
-   margin: 5px;
-}
-.img-slr{
-    width: 1200px;
-    height: 750px;
-}
-.titulo{
-    font-size: 50px;
-    position: absolute;
-    top: 13em;
-    left: 80px;
-    background-color: #0066aa;
-    color: #fff;
-}
-.subtitulo{
-    position: absolute;
-    left: 80px;
-    top: 36em;
-    background-color: #0066aa;
-    color: #fff;
-}
-.principal{
-    background-color: #3989f7;
-    padding: 20px;
+
+.slider {
+    position: relative;
     text-align: center;
+    margin: 5px;
+}
+
+.slider p {
+    text-align: left;
+}
+
+.img-slr {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    font-size: 6vw;
+    background-color: #0066aa;
+    color: #fff;
+    position: absolute;
+    top: calc(80% - 60px);
+    left: 10px;
+    padding: 0 5px;
+}
+
+.subtitulo {
+    font-size: 2vw;
+    position: absolute;
+    top: calc(90% - 25px);
+    left: 10px;
+    background-color: #0066aa;
+    color: #fff;
+    vertical-align: text-bottom;
+    padding: 0 5px;
+}
+
+.titulo-principal {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-principal h5 {
+    background-color: #3989f7;
+    width: calc(40% - 10px);
+    padding: 20px;
+    border-radius: 50px;
     color: #000;
     font-family: 'Just', sans-serif;
     font-size: 25px;
-    border-radius: 50px;
-    margin-right: 520px;
-    margin-left: 520px;
-    margin-top: 20px;
 }
-.contenedor{
-   text-align: center;
-   display: flex;
-   margin-right: 20px;
-   justify-content: space-around;
-   padding: 40px;
-   flex-wrap: wrap;
-}
-.contenedor section{
-    width: calc(60% - 10px);
-}
-.formulario{
+
+.contenedor {
     text-align: center;
-    margin: 20px;
-    background-color: #a7a7a7;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
 }
-.buscador{
+
+.contenedor article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscador {
     float: right;
     background-color: #a7a7a7;
     padding: 0 10px 10px 10px;
 }
-.cont-cont{
-    display: flex;
-}
-.tit-cont{
+
+.tit-cont {
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
     font-family: 'Just', sans-serif;
 }
-.imagen{
-    width: 100%;
-    height: 627px;
-    margin-top: 20px;
-}
-.datos{
+
+.datos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -155,89 +199,196 @@ article a:hover{
     margin-right: 20px;
     padding: 20px;
 }
-.bot-env{
+
+.bot-env {
     padding: 5px;
     margin-bottom: 10px;
-    background-color:#555454;
+    background-color: #555454;
     color: #000;
     margin-top: 10px;
 }
-.bot-env:hover{
+
+.bot-env:hover {
     background-color: #0066aa;
     color: #fff;
     transition: 1s;
 }
-.borde1{
+
+.borde {
+    width: 70px;
     padding: 25px;
     border-radius: 50%;
     background-color: #a7a7a7;
 }
-.borde2{
-    padding: 25px;
-    border-radius: 50%;
-    background-color: #a7a7a7;
-}
-.borde3{
-    padding: 25px;
-    border-radius: 50%;
-    background-color: #a7a7a7;
-}
-.columna{
-    float:left;
+
+.columna {
+    float: left;
     width: 50%;
+    vertical-align: middle;
 }
-.columnas:after{
-    content:"";
+
+.columna-derecha {
+    float: right;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.columnas:after {
+    content: "";
     display: table;
     clear: both;
 }
-.columnas{
+
+.columnas {
     background-color: #a7a7a7;
     margin-top: 10px;
     padding: 40px;
     margin-bottom: 10px;
 }
-.telefono{
-    text-align: center;
-    font-size: 130px;
-    margin-bottom: 5px;
-}
 
-.tex-gra{
+.tex-gra {
     font-size: 40px;
     text-align: left;
 }
-.ubicacion{
+
+.ubicacion {
     text-align: center;
     margin-bottom: 10px;
 }
-.asi-cont{
+
+.asi-cont {
     background-color: #fff;
 }
-.centrado{
-    text-align: center; 
+
+.centrado {
+    text-align: center;
 }
-.text-col1{
+
+.text-col1 {
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 2vw;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.text-col2{
+
+.text-col2 {
     margin-left: 40px;
-    font-size: 70px;
+    font-size: 7vw;
 }
-.tit-map{
+
+.telefono {
     text-align: center;
-    font-family: 'Just', sans-serif;
-    margin-top: 10px;
+    font-size: 11vw;
+    margin-bottom: 5px;
+}
+
+.titulo-contenido {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
     color: rgb(78, 78, 78);
 }
-.img-map{
-    text-align: center;
-}
-.map-hos{
+
+.map-hos {
     width: 1200px;
     height: 600px;
     margin: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenido-contacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: calc(90% - 15px);
+    text-align: center;
+    justify-content: center;
+}
+
+.formulario-contacto {
+    grid-column: 1;
+    padding: 10px;
+    width: calc(90% - 25px);
+    text-align: left;
+    background-color: #a7a7a7;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.formulario-contacto label {
+    display: block;
+}
+
+.inline-text {
+    display: inline !important;
+}
+
+.formulario-contacto input[type=text],
+input[type=tel],
+input[type=cel],
+input[type=email],
+input[type=date],
+textarea,
+select {
+    width: calc(100% - 10px);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #cfcfcf;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.submit-contacto {
+    float: right;
+    background-color: #0865bd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.datos-contacto {
+    grid-column: 2;
+    padding: 10px;
+    width: calc(90% - 25px);
+    text-align: left;
+    align-content: center;
+}
+
+.titulo-contacto {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #a7a7a7;
+    text-align: center;
+}
+
+.datos-contacto p {
+    font-size: 22px;
+    padding: 10px;
+    background-color: #a7a7a7;
+}
+
+.datos-ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(90% - 15px);
+}
+
+.titulo-ubicacion {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.icono-contacto {
+    border-radius: 50%;
+    color: #0865bd;
 }

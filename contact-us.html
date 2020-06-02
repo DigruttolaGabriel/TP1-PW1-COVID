@@ -5,54 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
+        <nav id="nav-bar">
+            <a href="index.html" id="logo">
+                <img src="img/coronavirus.svg" alt="logo">
+            </a>
+            <div class="search-container">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador">
+            </div>
+            <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+            <a href=""><i class="fa fa-medkit"></i> Vacunación</a>
+            <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+            <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
+        </nav>
     </header>
     <main>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                <li>
-                    <a href="diseases-list.html">ENFERMEDADES</a>
-                </li>
-                <li>
-                    <a href="covid-details.html">VACUNACIÓN</a>
-                </li>
-                <li>
-                    <a href="hospitals-map.html">HOSPITALES</a>
-                </li>
-                <li>
-                    <a href="contact-us.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="cont-cont">
-            <article class="formulario">
-                <h2 class="tit-cont">CONTACTO</h2>
-                <form action="" method="GET" enctype="application/x-www-form-urlencoded"></form>
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-                <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" name="apellido" required>
-                <br><br>
-                <label for="correo">Email: </label>
-                <input type="email" id="correo" name="correo" required>
-                <br><br>
-                <label for="telefono">Telefono:
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número" pattern="[0-9]{8,}"
-                        required>
-                </label>
-                <br><br>
-                <label for="celular">Celular: </label>
-                <input type="cel" id="celular" name="celular" required>
-                <br><br>
-                <label for="provincia">Provincia</label>
-                <select name="provincia" id="provincia" required>
+        <section class="main-content">
+            <h1 class="titulo-contenido">CONTACTO</h1>
+            <section class="contenido-contacto">
+                <article class="formulario-contacto">
+                    <form action="" method="GET" enctype="application/x-www-form-urlencoded"></form>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br><br>
+                    <label for="correo">Email: </label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br><br>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número" pattern="[0-9]{8,}" required>
+                    <br><br>
+                    <label for="celular">Celular: </label>
+                    <input type="cel" id="celular" name="celular" required>
+                    <br><br>
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia" required>
                     <option value="">Seleccione su provincia</option>
                     <option value="ba">Buenos Aires</option>
                     <option value="ca">Catamarca</option>
@@ -78,41 +73,67 @@
                     <option value="tf">Tierra del Fuego</option>
                     <option value="tu">Tucumán</option>
                 </select>
-                <br><br>
-                <label for="">Indique su sexo: </label>
-                M<input type="radio" name="sexo" id="masculino">
-                <label for="femenino"></label>
-                F <input type="radio" name="sexo" id="femenino">
-                <label for="otro"></label>
-                Otro <input type="radio" name="sexo" id="otro">
-                <br><br>
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" id="fecha" name="fecha" required>
-                <br><br>
-                <label for="consulta">Consulta</label>
-                <br>
-                <textarea name="consulta" id="consulta" cols="50" rows="10" placeholder="Deja tu mensaje..."></textarea>
-                <br>
-                <label for="terminos">Termino y condiciones</label>
-                <input type="checkbox" id="terminos" name="terminos" required>
-                <br>
-                <input type="submit" value="Enviar" id="submit" class="bot-env">
-            </article>
-            <article>
-                <img class="imagen"
-                    src=https://www.who.int/images/default-source/imported/contact-us.tmb-1024v.jpg?sfvrsn=fa0e6c6e_6"
-                    alt="">
+                    <br><br>
+                    <label for="">Indique su sexo: </label>
+                    <label for="femenino" class="inline-text">M</label>
+                    <input type="radio" name="sexo" id="masculino">
+                    <label for="femenino" class="inline-text">F</label> <input type="radio" name="sexo" id="femenino">
+                    <label for="otro" class="inline-text">Otro</label> <input type="radio" name="sexo" id="otro">
+                    <br><br>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <br><br>
+                    <label for="consulta">Consulta</label>
+                    <br>
+                    <textarea name="consulta" id="consulta" cols="50" rows="10" placeholder="Deja tu mensaje..."></textarea>
+                    <br>
+                    <label for="terminos" class="inline-text">Termino y condiciones</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <br>
+                    <button type="submit" class="submit-contacto">Enviar</button>
+                </article>
+                <article class="datos-contacto">
+                    <h3 class="titulo-contacto">DATOS DE CONTACTO</h3>
+                    <p>Larrazabal 5776</p>
+                    <p>4655-8998</p>
+                    <p>11-2222-2222</p>
+                    <p>xxxxx@gmail.com</p>
+                    <p>
+                        <i class="fas fa-address-card icono-contacto"></i>
+                        <i class="fas fa-phone-alt icono-contacto"></i>
+                        <i class="fas fa-mobile-alt icono-contacto"></i>
+                        <i class="fas fa-envelope icono-contacto"></i>
+                    </p>
+                </article>
+            </section>
+            <article class="datos-ubicacion">
+                <h3 class="titulo-ubicacion">UBICACIÓN</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26257.211131201067!2d-58.50079384509277!3d-34.65087942029395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1591060896511!5m2!1ses-419!2sar" width="100%" height="450"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
         </section>
-        <aside class="asi-cont">
-            <h3 class="ubicacion">UBICACIÓN</h3>
-            <div class="centrado">
-            <img src="img/ubicacion.png" alt="mapa-hospital" width="630">
-            </div>
-        </aside>
     </main>
     <footer>
-
+        <section class="container-grid">
+            <article>
+                <h3>Datos del grupo</h3>
+                <p>López, Julián - 41.106.914</p>
+                <p>Digruttola, Gabriel - 38.621.232</p>
+            </article>
+            <article>
+                <h3>Menú inferior</h3>
+                <p><a href="diseases-list.html">Enfermedades</a></p>
+                <p><a href="hospitals-map.html">Hospitales</a></p>
+                <p><a href="contact-us.html">Vacunas</a></p>
+            </article>
+            <article>
+                <h3>Redes sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x social" id="facebook-icon"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x social" id="twitter-icon"></i></a>
+                </p>
+            </article>
+        </section>
     </footer>
 </body>
 
