@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/common-styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nivo-slider.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="js/jquery.nivo.slider.js"></script> 
+    <script src="js/slider.js"></script>
     <title>Inicio</title>
 </head>
 
@@ -26,11 +31,17 @@
         </nav>
     </header>
     <main>
-        <div class="slider">
-            <img src="img/cuarentena-avila.jpg" alt="cuarentena" class="img-slr">
-            <h2 class="titulo">CORONAVIRUS (COVID-19)</h2>
-            <h3 class="subtitulo">PANDEMIA MUNDIAL</h3>
-        </div>
+        <section class="padre">
+            <article class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/cuarentena-avila.jpg" alt="cuarentena" title="CORONAVIRUS">
+                    <img src="img/cuarentena-1.jpg" alt="cuarentena-1">
+                    <img src="img/cuarentena-2.jpg" alt="cuarentena-2">
+                    <img src="img/cuarentena-3.jpg" alt="cuarentena-3">                 
+                </div>
+            </article>
+        </section>
+       
         <section class="titulo-principal">
             <h5>PANDEMIA MUNDIAL</h5>
         </section>
