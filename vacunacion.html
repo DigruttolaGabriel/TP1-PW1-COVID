@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fullcalendar/core/main.css">
+    <link rel="stylesheet" href="fullcalendar/daygrid/main.css">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="fullcalendar/core/main.js"></script>
+    <script src="fullcalendar/daygrid/main.js"></script>
+    <script src="js/calendario.js"></script>
+    <title>Calendario</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <a href="index.html" id="logo">
+                <img src="img/coronavirus.svg" alt="logo">
+            </a>
+            <div class="search-container">
+                <input type="list" placeholder="Buscar.." name="buscador" id="buscador">
+            </div>
+            <a href="diseases-list.html"><i class="fa fa-heartbeat"></i> Enfermedades</a>
+            <a href="vacunacion.html"><i class="fa fa-medkit"></i> Vacunación</a>
+            <a href="hospitals-map.html"><i class="fa fa-hospital-o"></i> Hospitales</a>
+            <a href="contact-us.html"><i class="fa fa-envelope"></i> Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div id="calendar"></div>
+    </main>
+    <footer>
+        <section class="container-grid">
+            <article>
+                <h3>Datos del grupo</h3>
+                <p>López, Julián - 41.106.914</p>
+                <p>Digruttola, Gabriel - 38.621.232</p>
+            </article>
+            <article>
+                <h3>Menú inferior</h3>
+                <p><a href="diseases-list.html">Enfermedades</a></p>
+                <p><a href="hospitals-map.html">Hospitales</a></p>
+                <p><a href="contact-us.html">Vacunas</a></p>
+            </article>
+            <article>
+                <h3>Redes sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x social" id="facebook-icon"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x social" id="twitter-icon"></i></a>
+                </p>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
