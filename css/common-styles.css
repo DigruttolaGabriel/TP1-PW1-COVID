@@ -40,6 +40,16 @@ article h6 {
     margin-bottom: 5px;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .link-pagina-principal {
     font-size: 15px;
     color: #000;
@@ -109,40 +119,9 @@ footer {
     opacity: 0.8;
 }
 
-.slider {
-    position: relative;
-    text-align: center;
-    margin: 5px;
-}
-
-.slider p {
-    text-align: left;
-}
-
-.img-slr {
+.padre {
     width: 100%;
-    height: 100%;
-}
-
-.titulo {
-    font-size: 6vw;
-    background-color: #0066aa;
-    color: #fff;
-    position: absolute;
-    top: calc(80% - 60px);
-    left: 10px;
-    padding: 0 5px;
-}
-
-.subtitulo {
-    font-size: 2vw;
-    position: absolute;
-    top: calc(90% - 25px);
-    left: 10px;
-    background-color: #0066aa;
-    color: #fff;
-    vertical-align: text-bottom;
-    padding: 0 5px;
+    margin: auto;
 }
 
 .titulo-principal {
@@ -391,4 +370,62 @@ select {
 .icono-contacto {
     border-radius: 50%;
     color: #0865bd;
+}
+
+.terapia {
+    color: rgb(78, 78, 78);
+    ;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-hospital {
+    text-align: center;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.contenedor .hospital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hospital {
+    padding: 20px;
+    width: 250px;
+    background-color: #579af8;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.hospital h3 {
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.popup {
+    background-color: grey;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    display: none;
+    border-radius: 8%;
+}
+
+.hospital-foto {
+    width: 150px;
+    border-radius: 10%;
+}
+
+.info {
+    padding: 10px;
+    text-decoration: underline;
 }

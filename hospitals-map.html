@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/common-styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+
     <title>Mapa de hospitales</title>
 </head>
 
@@ -31,6 +35,56 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d148542.97183513374!2d-58.58727535170125!3d-34.64543445478739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1ses!2sar!4v1591058756380!5m2!1ses!2sar" width="100%" height="700px"
                 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
+        <div>
+            <h2 class="terapia">HOSPITALES CON TERAPIA INTENSIVA</h2>
+        </div>
+        <div class="contenedor-hospital">
+            <div class="hospital">
+                <h3>Hospital Nacional Profesor Alejandro Posadas</h3>
+                <img src="img/hospital-posadas.jpg" alt="" class="hospital-foto">
+                <p><a id="abrir-a">Ver información >></a></p>
+                <article id="popup-a" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h4 class="info">Información</h4>
+                        <p>-Direccion: Avenida Presidente Arturo U. Illia s/n Marconi Morón 386, B1684</p>
+                        <p>-Localidad: El Palomar, Provincia de Buenos Aires</p>
+                        <p>-Teléfono: 011 4469-9300</p>
+                        <p>-Tipo: Público</p>
+                    </div>
+                </article>
+            </div>
+            <div class="hospital">
+                <h3>Hospital Donación Francisco Santojanni</h3>
+                <img src="img/hospital-santojanni.jpg" alt="" class="hospital-foto">
+                <p><a id="abrir-b">Ver información >></a></p>
+                <article id="popup-b" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h4 class="info">Información</h4>
+                        <p>-Direccion: Pilar 950</p>
+                        <p>-Localidad: Liniers, Provincia de Buenos Aires</p>
+                        <p>-Teléfono: 011 4630-5500</p>
+                        <p>-Tipo: Público</p>
+                    </div>
+                </article>
+            </div>
+            <div class="hospital">
+                <h3>Hospital Dr. Abel Zubizarreta</h3>
+                <img src="img/hospital-zubizarreta.jpg" alt="" class="hospital-foto">
+                <p><a id="abrir-c">Ver información >></a></p>
+                <article id="popup-c" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h4 class="info">Información</h4>
+                        <p>-Direccion: Nueva York 3952, C1419 HDN</p>
+                        <p>-Localidad: Devoto, Ciudad de Buenos Aires</p>
+                        <p>-Teléfono: 011 4501-5985</p>
+                        <p>-Tipo: Público</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="container-grid">
