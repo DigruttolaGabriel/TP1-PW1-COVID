@@ -16,6 +16,8 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 30px;
+    color: rgb(78, 78, 78);
+    text-align: center;
 }
 
 #listado-enfermedades li {
@@ -64,6 +66,22 @@ main {
     grid-column: 2;
     grid-row: 1/2;
     padding: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .img-enfermedad {
+        display: none;
+    }
+    .item-enfermedad {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+    .text-enfermedad {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 10px;
+    }
 }
 
 .titulo-enfermedad {
