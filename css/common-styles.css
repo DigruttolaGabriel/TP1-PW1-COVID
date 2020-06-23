@@ -122,6 +122,7 @@ footer {
 .padre {
     width: 100%;
     margin: auto;
+    padding-top: 10px;
 }
 
 .titulo-principal {
@@ -144,10 +145,11 @@ footer {
 .contenedor {
     text-align: center;
     display: flex;
-    margin-right: 20px;
     justify-content: space-around;
     padding: 40px;
     flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
 }
 
 .contenedor article {
@@ -206,28 +208,13 @@ footer {
     vertical-align: middle;
 }
 
-.columna-derecha {
-    float: right;
-    width: 50%;
-    vertical-align: middle;
-}
-
-.columnas:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.columnas {
+.llamar-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: #a7a7a7;
     margin-top: 10px;
     padding: 40px;
     margin-bottom: 10px;
-}
-
-.tex-gra {
-    font-size: 40px;
-    text-align: left;
 }
 
 .ubicacion {
@@ -235,30 +222,41 @@ footer {
     margin-bottom: 10px;
 }
 
-.asi-cont {
-    background-color: #fff;
+.llamar-columna-izquierda {
+    vertical-align: middle;
+}
+
+.llamar-columna-derecha {
+    text-align: right;
+    vertical-align: middle;
+    align-self: center;
+    justify-self: center;
+}
+
+.text-sintomas {
+    margin-left: 40px;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-llama {
+    margin-left: 40px;
+    font-size: 7vw;
+}
+
+.llamar-grid:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .centrado {
     text-align: center;
 }
 
-.text-col1 {
-    margin-left: 40px;
-    font-size: 2vw;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.text-col2 {
-    margin-left: 40px;
-    font-size: 7vw;
-}
-
-.telefono {
-    text-align: center;
+.text-llamar-telefono {
     font-size: 11vw;
-    margin-bottom: 5px;
 }
 
 .titulo-contenido {
@@ -266,12 +264,31 @@ footer {
     padding-bottom: 20px;
     font-size: 30px;
     color: rgb(78, 78, 78);
+    text-align: center;
 }
 
-.map-hos {
-    width: 1200px;
-    height: 600px;
-    margin: 20px;
+@media only screen and (max-width: 600px) {
+    .llamar-grid {
+        margin-top: 5px;
+        padding: 20px;
+        margin-bottom: 5px;
+    }
+    .text-sintomas {
+        margin-left: 0;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .text-llama {
+        margin-left: 0;
+        font-size: 7vw;
+    }
+    .text-llamar-telefono {
+        text-align: right;
+        vertical-align: middle;
+        font-size: 13vw;
+        margin-bottom: 5px;
+    }
 }
 
 .main-content {
@@ -342,6 +359,19 @@ select {
     align-content: center;
 }
 
+@media screen and (max-width: 600px) {
+    .contenido-contacto {
+        grid-template-columns: 100%;
+    }
+    .formulario-contacto {
+        width: 100%;
+        padding: 10px 0px 0px 10px;
+    }
+    .datos-contacto {
+        display: none;
+    }
+}
+
 .titulo-contacto {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -374,7 +404,6 @@ select {
 
 .terapia {
     color: rgb(78, 78, 78);
-    ;
     text-align: center;
     padding: 20px;
 }
@@ -382,9 +411,8 @@ select {
 .contenedor-hospital {
     text-align: center;
     display: flex;
-    margin-right: 20px;
     justify-content: space-around;
-    padding: 40px;
+    padding: 30px;
     flex-wrap: wrap;
 }
 
@@ -401,6 +429,8 @@ select {
     color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 25px;
+    border: 2px solid #5a5a5a;
+    margin-bottom: 1em;
 }
 
 .hospital h3 {
