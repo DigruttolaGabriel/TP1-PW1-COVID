@@ -370,6 +370,9 @@ select {
     .datos-contacto {
         display: none;
     }
+    .submit-contacto {
+        margin: -10px 10px 10px 10px;
+    }
 }
 
 .titulo-contacto {
